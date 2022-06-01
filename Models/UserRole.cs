@@ -1,4 +1,5 @@
-﻿namespace Models.Base
+﻿using System.ComponentModel.DataAnnotations;
+namespace Models.Base
 {
     public class UserRole : BaseEntity
     {

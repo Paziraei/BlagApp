@@ -1,10 +1,12 @@
-﻿namespace Models.Base
+﻿using System.ComponentModel.DataAnnotations;
+namespace Models.Base
 {
     public class TypeWork :BaseEntity
     {
         public TypeWork()
         {
         }
+         [MaxLength(20)]
         public string Name { get; set; }
         public User User { get; set; }
         public int UserId { get; set; }

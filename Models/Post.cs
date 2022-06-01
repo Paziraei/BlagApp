@@ -1,4 +1,5 @@
-﻿namespace Models.Base
+﻿using System.ComponentModel.DataAnnotations;
+namespace Models.Base
 {
     public class Post : BaseEntity
     {
@@ -10,6 +11,7 @@
         public Category Category { get; set; }
         public int CategoryId { get; set; }
         public List<Gallery> Galleries { get; set; }
+        [MaxLength(50)]
         public string Titel { get; set; }
         public string Text { get; set; }
         public List<Comment> Comments { get; set; }

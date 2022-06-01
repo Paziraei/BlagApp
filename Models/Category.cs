@@ -1,4 +1,4 @@
-﻿
+﻿using System.ComponentModel.DataAnnotations;
 namespace Models.Base
 {
     public class Category : BaseEntity
@@ -7,6 +7,8 @@ namespace Models.Base
         {
         }
         public List<Post> Posts { get; set; }
+
+        [MaxLength(50)]
         public string Name { get; set; } 
     }
 }
