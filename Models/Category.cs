@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Models.Base
+namespace Models
 {
-    public class Category : BaseEntity
+    public class Category : Base.BaseEntity
     {
         public Category()
         {

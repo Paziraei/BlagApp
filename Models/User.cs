@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Models.Base
+namespace Models
 {
-    public class User :BaseEntity
+    public class User :Base.BaseEntity
     {
         public User()
         {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Models.Base
+namespace Models
 {
-    public class TypeWork :BaseEntity
+    public class TypeWork :Base.BaseEntity
     {
         public TypeWork()
         {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Models.Base
+namespace Models
 {
-    public class Gallery : BaseEntity
+    public class Gallery : Base.BaseEntity
     {
         public Gallery()
         {

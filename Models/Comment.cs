@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Models.Base
+namespace Models
 {
-    public class Comment:BaseEntity
+    public class Comment: Base.BaseEntity
     {
         public Comment()
         {

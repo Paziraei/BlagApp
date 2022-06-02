@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Models.Base
+namespace Models
 {
-    public class UserRole : BaseEntity
+    public class UserRole : Base.BaseEntity
     {
         public UserRole()
         {
