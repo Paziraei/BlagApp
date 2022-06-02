@@ -6,16 +6,21 @@ namespace Models
         public Post()
         {
         }
-        public User User { get; set; }
-        public int UserId { get; set; }
-        public Category Category { get; set; }
-        public int CategoryId { get; set; }
+        public User? User { get; set; }
+        public int? UserId { get; set; }
+
+        public Category? Category { get; set; }
+        public int? CategoryId { get; set; }
+
         public List<Gallery> Galleries { get; set; }
+
         [MaxLength(50)]
-        public string Titel { get; set; }
+        public string Title { get; set; }
+
+        //[Required]
         public string Text { get; set; }
+
         public List<Comment> Comments { get; set; }
         public List<TypeWork> TypeWorks { get; set; }
-
     }
 }
