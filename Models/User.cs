@@ -6,27 +6,30 @@ namespace Models
         public User()
         {
         }
-        [MaxLength(50)]
+
+        [MaxLength(500)]
         public string Name { get; set; }
 
-        [MaxLength(50)]
+        [MaxLength(500)]
         public string LastName { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(10)]
         public string NatiralCode { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(13)]
         public string Phone { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(200)]
         public string UserName { get; set; }
 
-        [MaxLength(20)]
-        public string PassWord { get; set; }
+        [MaxLength(200)]
+        public string Password { get; set; }
+
         public List<UserRole> UserRoles { get; set; }
+
         public List<Post> Posts { get; set; }
+
         public List<Comment> Comments { get; set; }
         public List<TypeWork> TypeWorks { get; set; }
-
     }
 }

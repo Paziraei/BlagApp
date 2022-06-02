@@ -3,12 +3,15 @@ namespace Models
 {
     public class Category : Base.BaseEntity
     {
-        public Category()
+        public Category(string name) : base()
         {
+            Name = name;
         }
-        public List<Post> Posts { get; set; }
 
+        public List<Post>? Posts { get; set; }
+
+        [Required]
         [MaxLength(50)]
-        public string Name { get; set; } 
+        public string Name { get; set; }
     }
 }
